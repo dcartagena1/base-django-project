@@ -120,3 +120,7 @@ USE_TZ = True
 
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'assets')]
 STATIC_URL = '/static/'
+
+DEFAULT_SORT='fecha'
+DEFAULT_ORDER='desc'
+DEFAULT_LIMIT=20
