@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block css %}
+<link href="{% static 'css/bootstrap-table.min.css' %}" rel="stylesheet">
+<link href="{% static 'css/bootstrap-select.min.css' %}" rel="stylesheet">
+{% endblock %}
+
+{% block hscripts %}
+<script src="{% static 'bootstrap-table/bootstrap-table.min.js' %}"></script>
+<script src="{% static 'bootstrap-table/locale/bootstrap-table-es-AR.min.js' %}"></script>
+<script src="{% static 'js/tableExport.min.js' %}"></script>
+<script src="{% static 'bootstrap-table/extensions/export/bootstrap-table-export.min.js' %}"></script>
+<script src="{% static 'js/bootstrap-select.min.js' %}"></script>
+<script src="{% static 'js/bootstrap-select-defaults-es_CL.min.js' %}"></script>
+{% endblock %}
