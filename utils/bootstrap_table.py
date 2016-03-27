@@ -26,26 +26,23 @@ def prepare_list(
     limit,offset,search,sort,order = getBSTableParams(
         request,
         default_limit=DEFAULT_LIMIT,
-        default_offset=DEFAULT_OFFSET,
         default_sort=DEFAULT_SORT,
         default_order=DEFAULT_ORDER,
     )
 
     if search:
-        for filter_ in search_filters:
-            queryset |= queryset.filter(filter_).distinct()
         queryset = queryset.filter(
             search_filter(search)).distinct()
 
     n = queryset.count()
 
-    sort = posiblesSort.get(sort, default_sort)
+    sort = sort_dict.get(sort, default_sort)
     if sort:
         if order == 'desc':
             sort = '-' + sort
         queryset = queryset.order_by(sort)
 
-    start = min(n_queryset, offset)
-    end = min(n_queryset, offset+limit)
+    start = min(n, offset)
+    end = min(n, offset+limit)
 
     return queryset[start:end], n
