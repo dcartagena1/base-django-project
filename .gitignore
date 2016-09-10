@@ -63,3 +63,6 @@ target/
 
 #VirtualEnv autoenv
 .env
+
+#Applications
+apps
