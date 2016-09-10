@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django.contrib.humanize',
     'bootstrap3',
+    'fixturemigration',
 ]
 
 MIDDLEWARE_CLASSES = [
