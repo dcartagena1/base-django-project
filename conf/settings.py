@@ -5,4 +5,5 @@ INSTALLED_APPS += [
     # First the dependencies
 
     # Then apps from this branch
+    apps.girocomercial,
 ]
