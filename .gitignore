@@ -64,5 +64,5 @@ target/
 #VirtualEnv autoenv
 .env
 
-#Applications
-apps
+#Pycharm
+.idea
