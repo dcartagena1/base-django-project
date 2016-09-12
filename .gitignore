@@ -58,6 +58,9 @@ docs/_build/
 # PyBuilder
 target/
 
+# Static Files
+static/
+
 #Ipython Notebook
 .ipynb_checkpoints
 
