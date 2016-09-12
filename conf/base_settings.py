@@ -125,6 +125,7 @@ USE_TZ = True
 
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'assets')]
 STATIC_URL = '/static/'
+STATIC_ROOT = '/home/cnavarro/src/conta/static/'
 
 DEFAULT_SORT='fecha'
 DEFAULT_ORDER='desc'
