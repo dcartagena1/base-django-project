@@ -10,8 +10,11 @@ class PersonaJuridica(models.Model):
     rut = models.CharField(max_length=25, unique=True)
     giro = models.ForeignKey(Giro, on_delete=models.DO_NOTHING)
     direccion = models.CharField('dirección', max_length=300)
+    comuna = models.charfield('comuna', max_length=200)
+    ciudad = models.charfield('ciudad', max_length=200)
     telefono = models.CharField('teléfono', max_length=30)
     contacto = models.CharField(max_length=500, blank=True, default='')
+    e-mail = models.charfield('e-mail', max_length=300)
     url = models.URLField('página web', blank=True, default='')
 
     class Meta:
