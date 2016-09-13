@@ -6,7 +6,7 @@ from apps.girocomercial.models import Giro
 
 class PersonaJuridica(models.Model):
     nombre = models.CharField(max_length=50, unique=True)
-    razon_social = models.CharField(max_length=300, blank=True)
+    razon_social = models.CharField(max_length=300, unique=True)
     rut = models.CharField(max_length=25, unique=True)
     giro = models.ForeignKey(Giro, on_delete=models.DO_NOTHING)
     direccion = models.CharField('dirección', max_length=300)
